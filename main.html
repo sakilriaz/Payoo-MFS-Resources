@@ -105,27 +105,34 @@
                         <label class="label">
                           <span class="label-text font-bold">Select a Bank</span>
                         </label> 
-                        <input  type="text" placeholder="Select a Bank" class="input input-bordered" required />                    
+                        <select class="select">
+                          <option disabled selected>
+                              select bank
+                          </option>
+                          <option value="Bkash">Bkash</option>
+                          <option value="Nagad">Nagad</option>
+                          <option value="DBBL">DBBL</option>
+                         </select>                   
                       </div>                
                   
-                    <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold">Account Number</span>
-                    </label>
-                    <input value="01301301302" id="account-number" type="number" placeholder="type your account-number" class="input input-bordered" required />
-                  </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Account Number</span>
+                        </label>
+                        <input value="01301301302" id="cash-out-account-number" type="number" placeholder="type your account-number" class="input input-bordered" required />
+                      </div>
                   
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text font-bold">Amount</span>
                     </label>
-                    <input  id="amount" type="number" placeholder="type your amount" class="input input-bordered" required />                    
+                    <input  id="cash-out-amount" type="number" placeholder="type your amount" class="input input-bordered" required />                    
                   </div>
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text font-bold">PIN</span>
                     </label>
-                    <input value="1234" id="pin" type="text" placeholder="type your pin" class="input input-bordered" required />                    
+                    <input value="1234" id="cash-out-pin" type="text" placeholder="type your pin" class="input input-bordered" required />                    
                   </div>
                   <div class="form-control mt-6">
                     <button id="cash-out-btn" class="btn btn-primary mt-4">Cashout</button>
@@ -137,7 +144,9 @@
     </section>
 
    </section>
+   <script src="./utilities.js/toggle.js"></script>
    <script src="./utilities.js/utility.js"></script>
    <script src="./script.js/addmoney2.js"></script>
+   <script src="./script.js/cash-out.js"></script>
 </body>
 </html>

@@ -1,8 +1,12 @@
 document.getElementById("add-money-btn").addEventListener('click', function(event){
     event.preventDefault();
+   
+   const accountNumber = document.getElementById("account-number").value;
+
    const amount = getInputValueByID("amount");
+
    const pin = getInputValueByID("pin");
-   const accountNumber = document.getElementById("account-number").value; 
+
    const mainBalance = getInnerTextById("main-balance");
 
    if (accountNumber.length===11){
